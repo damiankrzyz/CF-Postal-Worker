@@ -1,0 +1,12 @@
+<script>
+    fetch('https://cf-postal-worker.devcrate.workers.dev/send', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    subject: 'Email subject',
+    body: '<h1>Email content</h1>'
+  })
+})
+</script>
